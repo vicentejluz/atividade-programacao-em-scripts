@@ -1,63 +1,63 @@
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>localhost</title>
-	</head>
-	<body>
-		<script languague="JavaScript">
-			function Validar(){
-				if (document.frm_veiculos.txt_renavam.value == "" || 
-						  document.frm_veiculos.txt_descVeiculo.value == "" || 
-								document.frm_veiculos.txt_anoFabricacao.value == "" ||
-									document.frm_veiculos.txt_placa.value == "" ||
-										document.frm_veiculos.txt_valorVeiculo.value == ""){
-					alert("PREENCHA TODOS OS CAMPOS!!!");	
-					return false;				
-				}
-				else{
-					document.frm_veiculos.action='gravar.php';
-				}
+<head>
+	<meta charset="UTF-8">
+	<title>localhost</title>
+</head>
+<body>
+	<script languague="JavaScript">
+		function Validar(){
+			if (document.frm_veiculos.txt_renavam.value == "" || 
+						document.frm_veiculos.txt_descVeiculo.value == "" || 
+							document.frm_veiculos.txt_anoFabricacao.value == "" ||
+								document.frm_veiculos.txt_placa.value == "" ||
+									document.frm_veiculos.txt_valorVeiculo.value == ""){
+				alert("PREENCHA TODOS OS CAMPOS!!!");	
+				return false;				
 			}
-		</script>
-		<form name="frm_veiculos" method="POST">
-			<center>
-				<hr>
-				<p>MULTIMARCAS VEÍCULOS - ADSVA4 - NOME DO ALUNO: VICENTE LUZ</p>
-				<hr>
-			</center>
-			<fieldset>
-				<legend>DADOS DO VEÍCULO:</legend>
-				<b>RENAVAM:</b> <br>
-				<input type="text" name="txt_renavam" pattern="[0-9]+$" 
-					size="8" maxlength="11"><p>
-				<b>DESCRIÇÃO DO VEÍCULO:</b> <br>
-				<input type="text" name="txt_descVeiculo" size="30" maxlength="33"><p>
-				<b>MONTADORA:</b><br>
-				<select name="montadoras">
-					<option value="VOLKSWAGEN">VOLKSWAGEN</option>
-					<option value="GENERAL MOTORS">GENERAL MOTORS</option>
-					<option value="FIAT">FIAT</option>
-					<option value="FORD">FORD</option>
-					<option value="RENAULT">RENAULT</option>
-					<option value="HYUNDAI">HYUNDAI</option>
-					<option value="TOYOTA">TOYOTA</option>
-					<option value="HONDA">HONDA</option>
-				</select><p>
-				<b>ANO FABRICAÇÃO:</b><br>
-				<input type="number" name="txt_anoFabricacao" min="1900" max="2020"
-					size="8" maxlength="4"><p>
-				<b>PLACA:</b><br>
-				<input type="text" name="txt_placa" size="8" maxlength="7"><p>
-				<b>VALOR VEÍCULO:</b><br>
-				<input type="text" name="txt_valorVeiculo" pattern="[0-9.]+$"
-					size="8" maxlength="10"><p>
-			</fieldset>
-			<center>
-				<p><input type="submit" name="btn_cadastrar" value="CADASTRAR VEÍCULOS" 
-					onclick="Validar()">&nbsp;&nbsp;
-				<input type="submit" name="btn_listagem" value="LISTAGEM DE VEÍCULOS" 
-					onclick="document.frm_veiculos.action='listagem.php'"> 
-			</center>
-		</form>
-	</body>
+			else{
+				document.frm_veiculos.action='gravar.php';
+			}
+		}
+	</script>
+	<form name="frm_veiculos" method="POST">
+		<center>
+			<hr>
+			<p>MULTIMARCAS VEÍCULOS - ADSVA4 - NOME DO ALUNO: VICENTE LUZ</p>
+			<hr>
+		</center>
+		<fieldset>
+			<legend>DADOS DO VEÍCULO:</legend>
+			<b>RENAVAM:</b> <br>
+			<input type="text" name="txt_renavam" pattern="[0-9]+$" 
+				size="8" maxlength="11"><p>
+			<b>DESCRIÇÃO DO VEÍCULO:</b> <br>
+			<input type="text" name="txt_descVeiculo" size="30" maxlength="33"><p>
+			<b>MONTADORA:</b><br>
+			<select name="montadoras">
+				<option value="VOLKSWAGEN">VOLKSWAGEN</option>
+				<option value="GENERAL MOTORS">GENERAL MOTORS</option>
+				<option value="FIAT">FIAT</option>
+				<option value="FORD">FORD</option>
+				<option value="RENAULT">RENAULT</option>
+				<option value="HYUNDAI">HYUNDAI</option>
+				<option value="TOYOTA">TOYOTA</option>
+				<option value="HONDA">HONDA</option>
+			</select><p>
+			<b>ANO FABRICAÇÃO:</b><br>
+			<input type="number" name="txt_anoFabricacao" min="1900" max="2020"
+				size="8" maxlength="4"><p>
+			<b>PLACA:</b><br>
+			<input type="text" name="txt_placa" size="8" maxlength="7"><p>
+			<b>VALOR VEÍCULO:</b><br>
+			<input type="text" name="txt_valorVeiculo" pattern="[0-9.]+$"
+				size="8" maxlength="10"><p>
+		</fieldset>
+		<center>
+			<p><input type="submit" name="btn_cadastrar" value="CADASTRAR VEÍCULOS" 
+				onclick="Validar()">&nbsp;&nbsp;
+			<input type="submit" name="btn_listagem" value="LISTAGEM DE VEÍCULOS" 
+				onclick="document.frm_veiculos.action='listagem.php'"> 
+		</center>
+	</form>
+</body>
 </html>
