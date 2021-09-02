@@ -36,7 +36,7 @@
         <hr>
         <p>MULTIMARCAS VEÍCULOS - ADSVA4 - NOME DO ALUNO: VICENTE LUZ</p>
         <hr>
-			</center>
+	  </center>
       <p><b>DIGITE A DESCRIÇÃO DO VEÍCULO:</b>
       <input type="text" name="busca_descVeiculo"size="40" maxlength="40">&nbsp;
       <input type="submit" value="FILTRAR">&nbsp;
